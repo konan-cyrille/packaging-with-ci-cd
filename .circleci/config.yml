@@ -3,7 +3,7 @@ jobs:
   # Job to test package
   build_test:
     docker:
-      - image: circleci/python:3.6.4
+      - image: circleci/python:3.8.10
     steps:
       - checkout
       - run:
@@ -18,7 +18,7 @@ jobs:
   # Job to publish package on testpypi
   test_pypi_publish:
     docker:
-      - image: circleci/python:3.6.4
+      - image: circleci/python:3.8.10
     steps:
       - checkout
       - run:
